@@ -1,5 +1,4 @@
-list = [(1,'a'),(2,'b')]
+data = ("a", "b", "c")
+modify = list(data)
 
-for number, letter in list:
-    print("number:", number)
-    print("letter:",letter)
+print(modify)
