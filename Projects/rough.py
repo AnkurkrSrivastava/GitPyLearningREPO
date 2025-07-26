@@ -16,15 +16,44 @@
 #b = {3,2,1}
 #print(a == b)
 
-class Book:
-    def __init__(self,title,author):
-        self.title = title
-        self.author = author
-    def display(self):
-        print(self.title,self.author)
+#class Book:
+#    def __init__(self,title,author):
+#        self.title = title
+ #       self.author = author
+  #  def display(self):
+   #     print(self.title,self.author)
 
 
 
-book1 = Book("Hamlet", "William")
-book1.author = "Orwell"
-book1.display()
+#book1 = Book("Hamlet", "William")
+#book1.author = "Orwell"
+#book1.display()
+
+class Person:
+    def __init__(self,name,age):
+        self.name = None
+        self.age = None
+    @property
+    def set_name(self,name):
+        self.name = name
+    @name.setter
+    def name(self):
+        return self.name
+    
+    @property
+    def set_age(self,age):
+        self.age = age
+    
+    @age.setter
+    def age(self):
+        return self.age
+    
+obj = Person()
+obj.set_name = "Ankur"
+obj.set_age = 19
+print(obj.name())
+print(obj.age())
+
+import numpy as np
+NummyArray = np.array([20,20,40,50])
+print(NummyArray[2])
